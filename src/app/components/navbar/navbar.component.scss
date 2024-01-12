@@ -1,9 +1,11 @@
+@import './../../../assets/scss/variables.scss';
+
 header {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: $box-shadow;
   
   .container {
     display: flex;
@@ -12,11 +14,11 @@ header {
   }
 
   a {
-    color: #B19470;
+    color: $tan;
     transition: all 300ms ease-in-out;
 
     &:hover {
-      color: #76453B;
+      color: $brown;
     }
   }
 }
