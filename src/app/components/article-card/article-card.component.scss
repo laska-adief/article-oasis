@@ -1,11 +1,19 @@
 @import '../../../assets/scss/variables.scss';
 
 .card {
-  margin: 2rem;
   max-width: 320px;
   border-radius: 8px;
   box-shadow: $box-shadow;
   cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    box-shadow: $box-shadow-darker;
+
+    img {
+      transform: scale(1.2);
+    }
+  }
   
   .image {
     height: 160px;
@@ -16,10 +24,6 @@
       width: 100%;
       height: 100%;
       transition: $transition;
-
-      &:hover {
-        transform: scale(1.2);
-      }
     }
   }
 
