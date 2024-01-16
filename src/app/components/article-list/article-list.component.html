@@ -1,1 +1,7 @@
-<p>article-list works!</p>
+<div class="container">
+  <div class="list">
+    @for (article of articles; track $index) {
+    <app-article-card />
+    }
+  </div>
+</div>
